@@ -2,8 +2,8 @@
 
 > **Single source of truth** for where this project is right now. Read this first in any session.
 
-Last updated: 2026-06-30 22:10 IST
-Current checkpoint: 002-repo-extracted-and-a2-green
+Last updated: 2026-06-30 22:20 IST
+Current checkpoint: 003-a3-more-core-modules
 Current branch: master (tracking origin/master)
 CI status: not configured yet
 Live URLs: not deployed yet
@@ -14,14 +14,15 @@ GitHub: https://github.com/dhiraj-salian/matchsticks
 - [x] **000-bootstrap** (2026-06-30 21:55) — Re-planned project for Cloudflare-only, TDD, SOLID, GH Actions CI/CD, resumable state.
 - [x] **001-init-and-tests** (2026-06-30 21:59) — Vitest + Playwright + ESLint + Prettier initialized. First failing test written (score-calculator, TDD red).
 - [x] **002-repo-extracted-and-a2-green** (2026-06-30 22:10) — Matchsticks extracted to dedicated GitHub repo `dhiraj-salian/matchsticks`, all 3 commits pushed, `src/core/score-calculator.js` implemented (TDD green — 6/6 tests passing, lint clean).
+- [x] **003-a3-more-core-modules** (2026-06-30 22:18) — game-state state machine and physics-stepper implemented via TDD. 19 + 9 = 28 new tests passing, lint clean.
 
 ## In Progress
 
-- [ ] **A3** — TDD loop for `core/game-state.js`, `core/physics-stepper.js`.
+- [ ] **A4** — Author `.github/workflows/ci.yml` (lint + test on every push/PR).
 
 ## Next
 
-- [ ] **A5** — Author `.github/workflows/ci.yml`.
+- [ ] **B1** — SOLID refactor: extract PlayerController from `src/player.js`
 
 ## Blocked / Open Questions
 
