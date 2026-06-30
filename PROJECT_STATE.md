@@ -2,17 +2,18 @@
 
 > **Single source of truth** for where this project is right now. Read this first in any session.
 
-Last updated: 2026-06-30 22:07 IST
+Last updated: 2026-06-30 22:10 IST
 Current checkpoint: 002-repo-extracted-and-a2-green
-Current branch: master
+Current branch: master (tracking origin/master)
 CI status: not configured yet
 Live URLs: not deployed yet
+GitHub: https://github.com/dhiraj-salian/matchsticks
 
 ## Done
 
 - [x] **000-bootstrap** (2026-06-30 21:55) — Re-planned project for Cloudflare-only, TDD, SOLID, GH Actions CI/CD, resumable state.
 - [x] **001-init-and-tests** (2026-06-30 21:59) — Vitest + Playwright + ESLint + Prettier initialized. First failing test written (score-calculator, TDD red).
-- [x] **002-repo-extracted-and-a2-green** (2026-06-30 22:07) — Matchsticks extracted to dedicated GitHub repo, score-calculator implemented (TDD green).
+- [x] **002-repo-extracted-and-a2-green** (2026-06-30 22:10) — Matchsticks extracted to dedicated GitHub repo `dhiraj-salian/matchsticks`, all 3 commits pushed, `src/core/score-calculator.js` implemented (TDD green — 6/6 tests passing, lint clean).
 
 ## In Progress
 
@@ -24,7 +25,8 @@ Live URLs: not deployed yet
 
 ## Blocked / Open Questions
 
-- **GitHub repo creation requires manual step** — the fine-grained PAT lacks `Administration` write permission to create repos. User needs to create `dhiraj-salian/matchsticks` on GitHub, then `git push origin master` from `~/.openclaw/workspace/matchsticks/`. The remote is already configured.
+- **Legacy copy at `~/.openclaw/workspace/projects/matchsticks/`** still exists inside the techblog repo (as a safety net during extraction). Safe to delete now that the new repo is live and pushed. Atlas will remove it on next user confirmation.
+- **PAT scope note** — the fine-grained GitHub PAT on this box lacks `Administration: write` scope for repo creation. Atlas can push to existing repos but cannot create new ones. If we ever need to create another repo, Dhiraj creates it on github.com.
 
 ## Key paths (for resume)
 
