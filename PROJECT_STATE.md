@@ -2,10 +2,10 @@
 
 > **Single source of truth** for where this project is right now. Read this first in any session.
 
-Last updated: 2026-06-30 22:20 IST
-Current checkpoint: 003-a3-more-core-modules
+Last updated: 2026-07-01 15:25 IST
+Current checkpoint: 004-ci-baseline
 Current branch: master (tracking origin/master)
-CI status: not configured yet
+CI status: ✅ passing
 Live URLs: not deployed yet
 GitHub: https://github.com/dhiraj-salian/matchsticks
 
@@ -15,19 +15,20 @@ GitHub: https://github.com/dhiraj-salian/matchsticks
 - [x] **001-init-and-tests** (2026-06-30 21:59) — Vitest + Playwright + ESLint + Prettier initialized. First failing test written (score-calculator, TDD red).
 - [x] **002-repo-extracted-and-a2-green** (2026-06-30 22:10) — Matchsticks extracted to dedicated GitHub repo `dhiraj-salian/matchsticks`, all 3 commits pushed, `src/core/score-calculator.js` implemented (TDD green — 6/6 tests passing, lint clean).
 - [x] **003-a3-more-core-modules** (2026-06-30 22:18) — game-state state machine and physics-stepper implemented via TDD. 19 + 9 = 28 new tests passing, lint clean.
+- [x] **004-ci-baseline** (2026-07-01 15:25) — `.github/workflows/ci.yml` added (lint + unit + worker + build on every push/PR). CI green on master. Node 22. (A4+A5 collapsed — green CI confirmed.)
 
 ## In Progress
 
-- [ ] **A4** — Author `.github/workflows/ci.yml` (lint + test on every push/PR).
+- [ ] **B1** — SOLID refactor: extract PlayerController from `src/player.js`
 
 ## Next
 
-- [ ] **B1** — SOLID refactor: extract PlayerController from `src/player.js`
+- [ ] **B2** — Extract HazardStrategy interface; convert existing hazards to strategies
 
 ## Blocked / Open Questions
 
 - **Legacy copy at `~/.openclaw/workspace/projects/matchsticks/`** still exists inside the techblog repo (as a safety net during extraction). Safe to delete now that the new repo is live and pushed. Atlas will remove it on next user confirmation.
-- **PAT scope note** — the fine-grained GitHub PAT on this box lacks `Administration: write` scope for repo creation. Atlas can push to existing repos but cannot create new ones. If we ever need to create another repo, Dhiraj creates it on github.com.
+- **PAT scope note** — the fine-grained GitHub PAT on this box lacks `Administration: write` scope for repo creation AND `mergePullRequest` scope for PR merging. Atlas can push to existing repos but cannot create new ones or merge PRs via `gh`. If we ever need to create another repo, Dhiraj creates it on github.com. PR merges must be done via local git merge + push.
 
 ## Key paths (for resume)
 
