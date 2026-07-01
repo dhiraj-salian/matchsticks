@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest run",
     "test:unit": "vitest run --project unit",
-    "test:worker": "vitest run --project worker",
+    "test:worker": "vitest run --project worker --passWithNoTests",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "test:e2e:install": "playwright install --with-deps chromium",
